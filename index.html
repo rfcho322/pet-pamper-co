@@ -2,20 +2,24 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pet Pamper Co</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PetPamperCo</title>
+    <link rel="icon" href="images/paw.png">
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Modak&family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
     <!-- BOOTSTRAP 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- CUSTOM STYLING -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/fe40695223.js" crossorigin="anonymous"></script>
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.6.3.slim.js" integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc=" crossorigin="anonymous"></script>
     <!-- BOOTSTRAP 5 POPPER AND JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -48,13 +52,20 @@
             <div class="row">
                 <div class="col-lg-6">
                     <h1>Pamper your pet in the comfort of home.</h1>
-                    <button class="btn btn-dark" type="button">Download</button>
-                    <button class="btn btn-outline-light" type="button">Download</button>
+                    <button class="btn btn-dark btn-lg | btn--download" type="button">
+                        <i class="fa-brands fa-apple"></i>
+                        Download
+                    </button>
+                    <button class="btn btn-outline-light btn-lg | btn--download" type="button">
+                        <i class="fa-brands fa-google-play"></i>
+                        Download
+                    </button>
                 </div>
-                <div class="col-lg-6">
-                    <img src="images/hero-img.png" alt="pet-grooming-image">
+                <div class="col-lg-6 | title-image">
+                    <img src="images/title-image.png" alt="pet-grooming-image">
                 </div>
             </div>
+
         </div>
     </section>
     
@@ -63,14 +74,27 @@
 
     <section id="features">
 
-        <h3>In-Home Pet Grooming.</h3>
-        <p>Convenient grooming services in the comfort of your pet's home.</p>
+        <div class="container | container--features">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 | features__item">
+                    <i class="fa-solid fa-house-user fa-4x | features__icon"></i>
+                    <h3 class="features__title">In-Home Pet Grooming.</h3>
+                    <p class="features__desc">Convenient grooming services in the comfort of your pet's home.</p>
+                </div>
 
-        <h3>Personalized Attention.</h3>
-        <p>One-on-one care for a stress-free grooming experience.</p>
+                <div class="col-lg-4 col-md-12 | features__item">
+                    <i class="fa-solid fa-hand-holding-heart fa-4x | features__icon"></i>
+                    <h3 class="features__title">Personalized Attention.</h3>
+                    <p class="features__desc">One-on-one care for a stress-free grooming experience.</p>
+                </div>
 
-        <h3>Holistic Grooming.</h3>
-        <p>A holistic approach to pet grooming with an emphasis on overall health and well-being.</p>
+                <div class="col-lg-4 col-md-12 | features__item">
+                    <i class="fa-solid fa-soap fa-4x | features__icon"></i>
+                    <h3 class="features__title">Holistic Grooming.</h3>
+                    <p class="features__desc">A holistic approach to pet grooming with an emphasis on overall health and well-being.</p>
+                </div>
+            </div>
+        </div>
 
     </section>
     
@@ -79,13 +103,33 @@
 
     <section id="testimonials">
 
-        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
-        <img src="images/dog-img.jpg" alt="man-profile">
-        <em>Pebbles, New York</em>
-
-        <!-- <h2 class="testimonial-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h2>
-        <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
-        <em>Pebbles, New York</em> -->
+        <div id="testimonials__carousel" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <h2 class="testimonials__text">"Your home service pet grooming in Los Angeles exceeded my expectations with its convenience and personalized attention. The groomer was professional and my pet looked and felt great. I will definitely be a repeat customer."</h2>
+                <img class="testimonials__image" src="images/Jessica.jpg" alt="girl-profile">
+                <em>Jessica, Los Angeles</em>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <h2 class="testimonials__text">"Your home service pet grooming impressed me with the level of care and attention my pet received. The groomer was professional and the end result was a clean, happy dog. I highly recommend your services."</h2>
+                <img class="testimonials__image" src="images/John.jpg" alt="girl-profile">
+                <em>John, Miami</em>
+              </div>
+              <div class="carousel-item">
+                <h2 class="testimonials__text">"I've been using your home service pet grooming for a while now and I am so grateful for the exceptional service. The groomers are patient and gentle and the results are always amazing. I highly recommend your services."</h2>
+                <img class="testimonials__image" src="images/Sarah.jpg" alt="girl-profile">
+                <em>Sarah , New York</em>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonials__carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonials__carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
 
     </section>
     
@@ -94,10 +138,10 @@
 
     <section id="press">
 
-        <img src="images/1.png" alt="logo">
-        <img src="images/2.png" alt="logo">
-        <img src="images/3.png" alt="logo">
-        <img src="images/4.png" alt="logo">
+        <img class="press__logo" src="images/fish-bump.png" alt="fish-bump-logo">
+        <img class="press__logo" src="images/fox-tv.png" alt="fox-tv-logo">
+        <img class="press__logo" src="images/zbc-news.png" alt="zbc-news-logo">
+        <img class="press__logo" src="images/fluff-shop.png" alt="fluff-shop-logo">
 
     </section>
     

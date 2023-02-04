@@ -1,19 +1,142 @@
+:root {
+    --clr-accent-500: #E14D2A;
+    --clr-accent-400: #E87355;
+    --clr-accent-300: #F1DBBF;
+
+    --clr-neutral-200: #8F8F8F;
+    --clr-neutral-100: #FFF;
+
+    --ff-brand-name: 'Mochiy Pop One', sans-serif;
+    --ff-body: 'Montserrat', sans-serif;
+
+    --fw-regular: 300;
+    --fw-semi-bold: 500;
+    --fw-bold: 700;
+    --fw-black: 900;
+}
+
 body {
-    --font-family-brand: 'Modak', cursive;
-    --font-family-slogan: 'Montserrat', sans-serif;
+    font-family: var(--ff-body);
 }
 
 #title {
-    background-color: #E14D2A;
+    background-color: var(--clr-accent-500);
+    color: var(--clr-accent-300);
 }
 
+/* Navbar */
+.navbar {
+    padding-bottom: 2.5rem;
+}
+
+.navbar-brand {
+    font-family: var(--ff-brand-name);
+    font-size: 1.75rem;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-family: var(--ff-body);
+    font-weight: var(--fw-regular);
+    font-size: 1.25rem;
+}
+
+/* Hero */
+
 .container-fluid {
-    padding: 3% 15%;
+    padding: 3% 15% 0% 15%;
 }
 
 h1 {
-    font-family: var(--font-family-slogan);
-    font-weight: 900;
+    font-weight: var(--fw-black);
+    font-size: 3.5rem;
+    line-height: 1.5;
+    text-shadow: 2px 4px rgba(155, 46, 18, 0.45);
+}
+
+h2
+
+.title-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Download Buttons */
+
+.btn--download {
+    margin: 5% 3% 5% 0;
+}
+
+/* Features */
+
+.container--features {
+    margin-top: 1.875rem;
+}
+
+.features__item {
+    padding: 10% 3%;
+    text-align: center;
+}
+
+.features__icon {
+    margin-bottom: 1rem;
+    color: var(--clr-accent-400);
+}
+
+.features__title {
+    font-weight: var(--fw-bold);
+}
+
+.features__desc {
+    font-size: 1.125rem;
+    font-weight: var(--fw-semi-bold);
+    color: var(--clr-neutral-200);
+}
+
+.features__icon:hover {
+    color: var(--clr-accent-500);
+}
+
+/* Testimonials */
+
+#testimonials {
+    text-align: center;
+    background-color: var(--clr-accent-400);
+    color: var(--clr-neutral-100);
+}
+
+.carousel-item {
+    padding: 7% 15%;
+}
+
+.testimonials__text {
+    font-family: var(--ff-body);
+    font-weight: var(--fw-bold);
     font-size: 3rem;
     line-height: 1.5;
+}
+
+.testimonials__image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin: 1.25rem;
+}
+
+/* Press */
+
+#press {
+    background-color: var(--clr-accent-400);
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.press__logo {
+    width: 10%;
+    margin: 1.25rem 1.25rem 3.125rem;
 }
