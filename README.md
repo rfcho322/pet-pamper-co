@@ -14,8 +14,8 @@ PetPamperCo is a home service pet grooming website
 ### Screenshot
 
 <p align="center">
-  <img src="images/ss1.png" width="50%"/>
-  <img src="images/ss1.png" width="50%"/>
+  <img src="images/pet-pamper-co-desktop-ss.png" width="50%"/>
+  <img src="images/pet-pamper-co-mobile-ss.png" width="50%"/>
 </p>
 
 ### Links
