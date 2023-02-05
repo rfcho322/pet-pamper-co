@@ -89,18 +89,6 @@ p {
     align-items: center;
 }
 
-@media (max-width: 991px) {
-    .title__box {
-        text-align: center;
-    }
-    .title__image {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 1.5rem;
-    }
-}
-
 @media (max-width: 1150px) {
     .title__box {
         text-align: center;
@@ -115,6 +103,24 @@ p {
     }
     .title__image > img {
         width: 320px;
+    }
+}
+
+@media (max-width: 991px) {
+    .title__box {
+        text-align: center;
+    }
+    .title__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .title__heading {
+        font-size: 2.5rem;
     }
 }
 
@@ -175,6 +181,12 @@ p {
     margin: 1.25rem;
 }
 
+@media (max-width: 425px) {
+    .testimonials__text {
+        font-size: 1.5rem;
+    }
+}
+
 /* Press Section */
 
 #press {
@@ -185,6 +197,12 @@ p {
 .press__logo {
     width: 10%;
     margin: 1.25rem 1.25rem 3.125rem;
+}
+
+@media (max-width: 1150px) {
+    .press__logo {
+        width: 100px;
+    }
 }
 
 /* Pricing Section */
@@ -210,6 +228,12 @@ p {
     margin-top: 3.5rem;
 }
 
+@media (max-width: 425px) {
+    .pricing__header {
+        font-size: 2.5rem;
+    }
+}
+
 /* CTA */
 
 #cta {
@@ -228,6 +252,12 @@ p {
 
 .cta__download-button {
     margin: 5% 3% 5% 0;
+}
+
+@media (max-width: 425px) {
+    .cta__heading {
+        font-size: 1.5rem;
+    }
 }
 
 /* Footer */
