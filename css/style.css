@@ -17,11 +17,29 @@
 
 body {
     font-family: var(--ff-body);
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--ff-body);
+    font-weight: var(--fw-bold);
+}
+
+p {
+    font-size: 1.125rem;
+    font-weight: var(--fw-semi-bold);
+    color: var(--clr-neutral-200);
 }
 
 #title {
     background-color: var(--clr-accent-500);
     color: var(--clr-accent-300);
+}
+
+/* Containers */
+
+.container-fluid {
+    padding: 7% 15%;
 }
 
 /* Navbar Section */
@@ -46,34 +64,21 @@ body {
 
 /* Hero Section */
 
-.container-fluid {
-    padding: 3% 15% 3%;
+#title .container-fluid {
+    padding: 3% 15%;
 }
 
-h1 {
+.title__box {
+    text-align: left;
+}
+
+.title__heading {
     font-weight: var(--fw-black);
     font-size: 3.5rem;
     line-height: 1.5;
     text-shadow: 2px 4px rgba(155, 46, 18, 0.45);
-}
-
-h2 {
-    font-family: var(--ff-body);
-    font-weight: var(--fw-bold);
-    font-size: 3rem;
-    line-height: 1.5;
-}
-
-h3 {
-    font-family: var(--ff-body);
-    font-weight: var(--fw-bold);
-    font-size: 1.5rem;
-}
-
-p {
-    font-size: 1.125rem;
-    font-weight: var(--fw-semi-bold);
-    color: var(--clr-neutral-200);
+    word-wrap: break-word;
+    text-overflow: ellipsis;
 }
 
 .title__image {
@@ -83,7 +88,7 @@ p {
 }
 
 @media (max-width: 991px) {
-    #title {
+    .title__box {
         text-align: center;
     }
     .title__image {
@@ -95,7 +100,7 @@ p {
 }
 
 @media (max-width: 1154px) {
-    #title {
+    .title__box {
         text-align: center;
     }
 
@@ -108,6 +113,9 @@ p {
         align-items: center;
         flex-basis: 100%;
         margin-top: 1.5rem;
+    }
+    .title__image > img {
+        width: 320px;
     }
 }
 
@@ -129,7 +137,12 @@ p {
 
 .features__item {
     padding: 10% 3%;
-    text-align: center;
+}
+
+.features__title {
+    font-size: 1.5rem;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
 }
 
 .features__icon {
@@ -144,13 +157,15 @@ p {
 /* Testimonials Section */
 
 #testimonials {
-    text-align: center;
     background-color: var(--clr-accent-400);
     color: var(--clr-neutral-100);
 }
 
-.carousel-item {
-    padding: 7% 15%;
+.testimonials__text {
+    font-size: 3rem;
+    line-height: 1.5;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
 }
 
 .testimonials__image {
@@ -165,7 +180,6 @@ p {
 
 #press {
     background-color: var(--clr-accent-400);
-    text-align: center;
     padding-bottom: 3%;
 }
 
@@ -176,9 +190,21 @@ p {
 
 /* Pricing Section */
 
-#pricing {
-    padding: 6.25rem 0 6.25rem 0;
-    text-align: center;
+.pricing__header {
+    font-weight: var(--fw-black);
+    font-size: 3rem;
+    line-height: 1.5;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+}
+
+.pricing__title {
+    font-size: 1.5rem;
+}
+
+.pricing__text {
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 .pricing__package-card-grid {
@@ -188,10 +214,8 @@ p {
 /* CTA */
 
 #cta {
-    text-align: center;
     background-color: var(--clr-accent-500);
     color: var(--clr-neutral-100);
-    padding: 7% 15%;
 }
 
 .cta__heading {
@@ -199,6 +223,8 @@ p {
     font-weight: var(--fw-black);
     font-size: 3.5rem;
     line-height: 1.5;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
 }
 
 .cta__download-button {
@@ -208,17 +234,17 @@ p {
 /* Footer */
 
 #footer {
-    text-align: center;
     background-color: var(--clr-neutral-100);
-    padding: 7% 15%;
+}
+
+.footer__social-icons {
+    display: flex;
+    justify-content: center;
 }
 
 .footer__icons {
     text-decoration: none;
     color: var(--clr-accent-500);
-}
-
-.footer__icons > .footer__social-icons {
     margin: 3rem 1.5rem;
 }
 
