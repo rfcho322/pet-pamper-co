@@ -1,4 +1,4 @@
-# PetPamperCo (NOT YET FINAL?)
+# PetPamperCo
 PetPamperCo is a home service pet grooming website
 
 ## Table of Contents
@@ -20,7 +20,7 @@ PetPamperCo is a home service pet grooming website
 
 ### Links
 - Source Code: https://github.com/rfcho322/pet-pamper-co
-- Demo website: n/a
+- Demo website: https://rfcho322.github.io/pet-pamper-co/
 
 ### How I developed it?
 
