@@ -101,12 +101,9 @@ p {
     }
 }
 
-@media (max-width: 1154px) {
+@media (max-width: 1150px) {
     .title__box {
         text-align: center;
-    }
-
-    .title__cover {
         flex-basis: 100%;
     }
     .title__image {
