@@ -24,7 +24,7 @@ body {
     color: var(--clr-accent-300);
 }
 
-/* Navbar */
+/* Navbar Section */
 .navbar {
     padding-bottom: 2.5rem;
 }
@@ -44,10 +44,10 @@ body {
     font-size: 1.25rem;
 }
 
-/* Hero */
+/* Hero Section */
 
 .container-fluid {
-    padding: 3% 15% 0% 15%;
+    padding: 3% 15% 3%;
 }
 
 h1 {
@@ -57,12 +57,58 @@ h1 {
     text-shadow: 2px 4px rgba(155, 46, 18, 0.45);
 }
 
-h2
+h2 {
+    font-family: var(--ff-body);
+    font-weight: var(--fw-bold);
+    font-size: 3rem;
+    line-height: 1.5;
+}
 
-.title-image {
+h3 {
+    font-family: var(--ff-body);
+    font-weight: var(--fw-bold);
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.125rem;
+    font-weight: var(--fw-semi-bold);
+    color: var(--clr-neutral-200);
+}
+
+.title__image {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
+}
+
+@media (max-width: 991px) {
+    #title {
+        text-align: center;
+    }
+    .title__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width: 1154px) {
+    #title {
+        text-align: center;
+    }
+
+    .title__cover {
+        flex-basis: 100%;
+    }
+    .title__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 100%;
+        margin-top: 1.5rem;
+    }
 }
 
 /* Download Buttons */
@@ -71,7 +117,11 @@ h2
     margin: 5% 3% 5% 0;
 }
 
-/* Features */
+/* Features Section */
+
+#features {
+    background-color: var(--clr-neutral-100);
+}
 
 .container--features {
     margin-top: 1.875rem;
@@ -87,21 +137,11 @@ h2
     color: var(--clr-accent-400);
 }
 
-.features__title {
-    font-weight: var(--fw-bold);
-}
-
-.features__desc {
-    font-size: 1.125rem;
-    font-weight: var(--fw-semi-bold);
-    color: var(--clr-neutral-200);
-}
-
 .features__icon:hover {
     color: var(--clr-accent-500);
 }
 
-/* Testimonials */
+/* Testimonials Section */
 
 #testimonials {
     text-align: center;
@@ -113,13 +153,6 @@ h2
     padding: 7% 15%;
 }
 
-.testimonials__text {
-    font-family: var(--ff-body);
-    font-weight: var(--fw-bold);
-    font-size: 3rem;
-    line-height: 1.5;
-}
-
 .testimonials__image {
     width: 150px;
     height: 150px;
@@ -128,7 +161,7 @@ h2
     margin: 1.25rem;
 }
 
-/* Press */
+/* Press Section */
 
 #press {
     background-color: var(--clr-accent-400);
@@ -139,4 +172,56 @@ h2
 .press__logo {
     width: 10%;
     margin: 1.25rem 1.25rem 3.125rem;
+}
+
+/* Pricing Section */
+
+#pricing {
+    padding: 6.25rem 0 6.25rem 0;
+    text-align: center;
+}
+
+.pricing__package-card-grid {
+    margin-top: 3.5rem;
+}
+
+/* CTA */
+
+#cta {
+    text-align: center;
+    background-color: var(--clr-accent-500);
+    color: var(--clr-neutral-100);
+    padding: 7% 15%;
+}
+
+.cta__heading {
+    font-family: var(--ff-body);
+    font-weight: var(--fw-black);
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+.cta__download-button {
+    margin: 5% 3% 5% 0;
+}
+
+/* Footer */
+
+#footer {
+    text-align: center;
+    background-color: var(--clr-neutral-100);
+    padding: 7% 15%;
+}
+
+.footer__icons {
+    text-decoration: none;
+    color: var(--clr-accent-500);
+}
+
+.footer__icons > .footer__social-icons {
+    margin: 3rem 1.5rem;
+}
+
+.footer__icons:hover {
+    color: var(--clr-accent-400);
 }
