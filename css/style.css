@@ -118,7 +118,7 @@ p {
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 430px) {
     .title__heading {
         font-size: 2.5rem;
     }
@@ -181,7 +181,7 @@ p {
     margin: 1.25rem;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 430px) {
     .testimonials__text {
         font-size: 1.5rem;
     }
@@ -228,7 +228,7 @@ p {
     margin-top: 3.5rem;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 430px) {
     .pricing__header {
         font-size: 2.5rem;
     }
@@ -254,7 +254,7 @@ p {
     margin: 5% 3% 5% 0;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 430px) {
     .cta__heading {
         font-size: 1.5rem;
     }
