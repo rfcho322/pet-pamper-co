@@ -308,7 +308,7 @@ p {
     color: var(--clr-accent-500);
 }
 
-.footer__author a:hover{
+.footer__author a:hover {
     color: var(--clr-accent-400);
 }
 
@@ -321,7 +321,7 @@ p {
     list-style: none;
 }
 
-.nav-item{
+.nav-item {
     text-align: left;
     padding: 0;
 }
