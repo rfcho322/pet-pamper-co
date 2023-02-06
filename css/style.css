@@ -186,11 +186,18 @@ p {
 }
 
 .testimonials__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.testimonials__rounded-image {
     width: 150px;
     height: 150px;
     object-fit: cover;
-    border-radius: 100%;
-    margin: 1.25rem;
+    border-radius: 50%;
 }
 
 @media (max-width: 430px) {
