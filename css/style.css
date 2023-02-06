@@ -64,6 +64,18 @@ p {
     font-size: 1.25rem;
 }
 
+@media (max-width: 424px) {
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 332px) {
+    .navbar-brand {
+        font-size: 1.15rem;
+    }
+}
+
 /* Hero Section */
 
 #title .container-fluid {
